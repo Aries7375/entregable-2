@@ -73,15 +73,11 @@ const Weather = ({ all, temp }) => {
         </div>
         <div className="addInfo">
           <div className="hume">
-            <img
-              className="icon"
-              src="./src/assets/humidity.png"
-              alt="humidity"
-            />
+            <img className="icon" src="./humidity.png" alt="humidity" />
             <p>{all?.main.humidity}% Humidity</p>
           </div>
           <div className="wind">
-            <img className="icon" src="./src/assets/wind.png" alt="wind" />
+            <img className="icon" src="./wind.png" alt="wind" />
             <p>{(all?.wind.speed * 1.852).toFixed(1)} km/h Winds</p>
           </div>
         </div>
